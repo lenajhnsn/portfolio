@@ -26,7 +26,7 @@ const timelineData = [
       },
       {
         title: 'Creating the Memo Archive',
-        description: 'My latest project, the Memo Archive, brings everything together. This full-stack application showcases my coding skills, problem-solving, and design abilities.',
+        description: 'My latest full-stack application, the Memo Archive, brings everything together. This full-stack application showcases my coding skills, problem-solving, and design abilities.',
       }
 ];
 
