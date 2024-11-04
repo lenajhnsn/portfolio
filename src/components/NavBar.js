@@ -1,4 +1,3 @@
-import exp from 'constants';
 import React from 'react';
 import './NavBar.css';
 
