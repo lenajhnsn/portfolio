@@ -1,7 +1,11 @@
 import React from 'react';
 import Timeline from './components/Timeline';
+import Home from './components/Home';
 import './components/Timeline.css';
 import NavBar from './components/NavBar';
+import Projects from './components/Projects';
+import TechnicalSkills from './components/TechnicalSkills';
+import Contact from './components/Contact';
 
 
 
