@@ -6,8 +6,7 @@
     justify-content: center; /* Center align vertically */
     min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
     text-align: center; /* Center align the text inside the container */
-    background-color: #f9f9f9; /* Light background color */
-    color: #333; /* Dark text color for good contrast */
+    background-color: #fff; /* Light background color */
     padding: 20px; /* Padding around the content */
 }
 

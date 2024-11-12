@@ -4,20 +4,17 @@
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    color: #333;
 }
 
 /* Title styling */
 .contact-container h2 {
     font-size: 2.5rem;
-    color: #007acc;
     margin-bottom: 10px;
 }
 
 /* Contact description styling */
 .contact-container p {
     font-size: 1.1rem;
-    color: #666;
     margin-bottom: 20px;
 }
 
@@ -34,7 +31,6 @@
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #007acc;
     font-size: 1.2rem;
     transition: transform 0.3s ease;
 }

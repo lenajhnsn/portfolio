@@ -34,6 +34,13 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jpg|jpeg|gif)$/,  // Add this rule for images
+        type: 'asset/resource',
+        generator: {
+            filename: 'assets/[name].[hash][ext]',
+        },
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader',

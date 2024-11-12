@@ -4,14 +4,12 @@
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
-    color: #333;
 }
 
 /* Style for the section title */
 .technical-skills-container h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #007acc;
 }
 
 /* Style for skill categories */
@@ -21,7 +19,6 @@
 
 .skill-category h3 {
     font-size: 1.75rem;
-    color: #555;
 }
 
 /* Skills list grid */
@@ -58,7 +55,6 @@
 
 .videos-section h2 {
     font-size: 2rem;
-    color: #007acc;
     margin-bottom: 20px;
 }
 
@@ -87,7 +83,6 @@
 /* Video title and description */
 .video-item h3 {
     font-size: 1.25rem;
-    color: #333;
     margin-top: 15px;
 }
 

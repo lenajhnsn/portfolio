@@ -6,4 +6,6 @@ html {
 /* Apply Montserrat globally */
 body {
     font-family: 'Montserrat', sans-serif; /* Fallback to sans-serif */
+    color: #171716;
+    background-color: #f9f9f9
 }
