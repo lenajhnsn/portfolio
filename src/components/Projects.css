@@ -1,0 +1,99 @@
+/* Main container for the Projects component */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+}
+
+/* Project header styling */
+.project-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Project title */
+.project-header h2 {
+    font-size: 2.5rem;
+    color: #007acc;
+    margin-bottom: 15px;
+}
+
+/* Full-width project image */
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Two-column tech stack row */
+.tech-stack-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+/* Styling for each tech column */
+.tech-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Column titles */
+.tech-column h3 {
+    font-size: 1.75rem;
+    color: #007acc;
+    margin-bottom: 15px;
+}
+
+/* List styling for tech stack items */
+.tech-column ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.tech-column li {
+    margin: 10px 0;
+}
+
+/* Two-column video row */
+.video-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+/* Styling for each video column */
+.video-column {
+    flex: 1;
+    text-align: center;
+}
+
+/* Styling for video placeholders (iframe) */
+.video-placeholder {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .tech-stack-row, .video-row {
+        flex-direction: column;
+    }
+
+    .tech-column, .video-column {
+        width: 100%;
+    }
+}

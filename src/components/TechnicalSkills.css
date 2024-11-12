@@ -1,4 +1,4 @@
-/* Main container for the Technical Skills component */
+/* Container for the Technical Skills section */
 .technical-skills-container {
     text-align: center;
     padding: 20px;
@@ -11,52 +11,95 @@
 .technical-skills-container h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #2f546c;
+    color: #007acc;
 }
 
-/* Each category has a title and skill items below it */
+/* Style for skill categories */
 .skill-category {
     margin-top: 30px;
 }
 
-/* Style for category title */
 .skill-category h3 {
     font-size: 1.75rem;
-    margin-bottom: 15px;
     color: #555;
 }
 
-/* Container for each list of skills, using Flexbox to align */
+/* Skills list grid */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Space between each skill */
+    gap: 20px;
 }
 
-/* Style for each skill item, aligning logo and name vertically */
 .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease;
 }
 
-/* Style for the logo images */
 .skill-logo {
-    width: 60px; /* Default size of the logo */
+    width: 60px;
     height: 60px;
     margin-bottom: 10px;
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.3s ease;
 }
 
-/* Style for skill names */
-.skill-item span {
-    font-size: 1rem;
-    color: #333;
-}
-
-/* Hover effect to enlarge the skill logo */
 .skill-item:hover .skill-logo {
-    transform: scale(1.3); /* Enlarge the logo slightly on hover */
+    transform: scale(1.3);
+}
+
+/* Videos section styling */
+.videos-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.videos-section h2 {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+/* Grid for organizing videos in two columns */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.video-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-embed {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Video title and description */
+.video-item h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.video-item p {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .videos-grid {
+        grid-template-columns: 1fr;
+    }
 }

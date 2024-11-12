@@ -1,0 +1,60 @@
+/* Main container for the Contact component */
+.contact-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Title styling */
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+/* Contact description styling */
+.contact-container p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Flex container for the contact links */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Styling for each contact link */
+.contact-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #007acc;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Icon styling */
+.contact-links i {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+/* Hover effect for links */
+.contact-links a:hover {
+    transform: scale(1.1); /* Slightly enlarges link on hover */
+    color: #005fa3; /* Darker blue for hover */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .contact-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
