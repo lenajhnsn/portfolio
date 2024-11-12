@@ -1,0 +1,77 @@
+/* Main container for the Home component */
+.home-container {
+    display: flex; /* Use flexbox to align content */
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically */
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+    text-align: center; /* Center align the text inside the container */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color for good contrast */
+    padding: 20px; /* Padding around the content */
+}
+
+/* Styling for the welcome text (heading) */
+.welcome-text {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #007acc; /* Blue color for the heading */
+}
+
+/* Styling for the introductory text (paragraph) */
+.intro-text {
+    font-size: 1.25rem; /* Slightly smaller font size for the intro text */
+    max-width: 600px; /* Limit the width to 600px for readability */
+    margin-bottom: 25px; /* Space below the intro text */
+    color: #555; /* Lighter gray color for the intro text */
+}
+
+/* Highlighted box to draw attention with some additional info */
+.highlight-box {
+    background-color: #ffeb3b; /* Yellow background color */
+    padding: 15px 30px; /* Padding inside the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-top: 20px; /* Space above the highlight box */
+    color: #333; /* Dark text color for good contrast */
+}
+
+/* Responsive styling for screens with a max-width of 900px */
+@media screen and (max-width: 900px) {
+    .home-container {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+    
+    .welcome-text {
+        font-size: 2rem; /* Slightly smaller font size for the heading */
+    }
+
+    .intro-text {
+        font-size: 1.1rem; /* Slightly smaller font size for intro text */
+    }
+
+    .highlight-box {
+        width: 80%; /* Make the highlight box more narrow on smaller screens */
+    }
+}
+
+/* Responsive styling for screens with a max-width of 600px */
+@media screen and (max-width: 600px) {
+    .home-container {
+        padding: 10px; /* Even less padding on very small screens */
+    }
+
+    .welcome-text {
+        font-size: 1.75rem; /* Smaller font size for the heading */
+    }
+
+    .intro-text {
+        font-size: 1rem; /* Smallest font size for the intro text */
+    }
+
+    .highlight-box {
+        width: 100%; /* Make the highlight box full width */
+        font-size: 0.9rem; /* Slightly smaller font size for the box content */
+    }
+}

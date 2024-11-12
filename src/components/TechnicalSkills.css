@@ -1,0 +1,62 @@
+/* Main container for the Technical Skills component */
+.technical-skills-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Style for the section title */
+.technical-skills-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2f546c;
+}
+
+/* Each category has a title and skill items below it */
+.skill-category {
+    margin-top: 30px;
+}
+
+/* Style for category title */
+.skill-category h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Container for each list of skills, using Flexbox to align */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between each skill */
+}
+
+/* Style for each skill item, aligning logo and name vertically */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Style for the logo images */
+.skill-logo {
+    width: 60px; /* Default size of the logo */
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Style for skill names */
+.skill-item span {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Hover effect to enlarge the skill logo */
+.skill-item:hover .skill-logo {
+    transform: scale(1.3); /* Enlarge the logo slightly on hover */
+}

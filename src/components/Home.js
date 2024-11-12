@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'; // Import framer-motion for animations
 import './Home.css';
 
 // Home component
-const Home = => {
+const Home = ()=> {
     return (
         <div className = "home-container">
             {/*Animated welcome message */}

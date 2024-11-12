@@ -18,19 +18,30 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,       // Handle .js and .jsx files
+        test: /\.svg$/,
+        oneOf: [
+          {
+            issuer: /\.[jt]sx?$/, // Apply @svgr/webpack when imported in a JS/TS file
+            use: ['@svgr/webpack'],
+          },
+          {
+            type: 'asset', // Uses file-loader for SVGs that are direct image URLs
+            loader: 'file-loader',
+            options: {
+              name: 'assets/[name].[hash].[ext]',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',  // Use Babel loader
-        },
+        use: 'babel-loader',
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'], // Use style-loader and css-loader
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
-  resolve: {
-    extensions: ['.js', '.jsx'],
-  },
-};
+};  
