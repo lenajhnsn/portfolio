@@ -2,3 +2,8 @@
 html {
     scroll-behavior: smooth; 
 }
+
+/* Apply Montserrat globally */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fallback to sans-serif */
+}
