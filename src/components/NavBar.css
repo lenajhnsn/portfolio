@@ -6,7 +6,7 @@
     right: 0; /* Ensures it extends to the right edge */
     background-color: #a38f8b;
     width: 100%;
-    height: 150px;
+    height: 80px;
     display: flex;
     justify-content: space-between; /* Space between title and links */
     align-items: center; /* Center items vertically */
@@ -16,16 +16,10 @@
     overflow: hidden; /* Prevents content from spilling over */
     z-index: 10;
 }
-/* Logo styling  */
-.navbar-logo .logo{
-    width: auto;
-    height: 150px;
-}
-
 /* Styling for the title on the left side */
 .navbar-title {
-    width: auto;
-    height: ;
+    /* width: auto;
+    height: 150px; */
 }
 
 /* List styling for navigation links */

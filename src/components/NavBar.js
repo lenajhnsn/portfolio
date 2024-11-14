@@ -9,10 +9,7 @@ import logo3 from '../assets/header3.png';
 const NavBar = () => {
     return (
         <nav className = "navbar">
-            {/* Logo top left
-            <a href="/" className="navbar-logo">
-                <img src={logoImage} alt="Logo" className="logo" />
-            </a>  */}
+
             {/* Portfolio title on the left side */}
             <a href="/" className="navbar-title">
                 <img src={logo3} alt="Logo" className="logo" />
