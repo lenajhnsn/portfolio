@@ -5,7 +5,7 @@ import MemoArchiveVideo from "../assets/memoarchivevid.mp4"; // Import a valid v
 const Projects = () => {
     return (
         <div className="projects-container">
-            <h1 className='project-title'>My Project</h1>
+            <h2 className='project-title'>My Project</h2>
             {/* Four-column row for description, video, and tech stack */}
             <div className="project-main-row">
                 {/* Description column */}

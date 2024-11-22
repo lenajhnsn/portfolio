@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import TechnicalSkills from './components/TechnicalSkills';
 import Contact from './components/Contact';
+import TechVideos from './components/TechVideos';
 
 
 
@@ -15,6 +16,7 @@ const App = () => {
             <NavBar />
             <section id = "home"><Home /></section>
             <section id = "projects"><Projects /></section>
+            <section id = "tech-videos"><TechVideos /></section>
             <section id = "skills"><TechnicalSkills /></section>
             <section id = "timeline"><Timeline /></section>
             <section id = "contact"><Contact /></section>

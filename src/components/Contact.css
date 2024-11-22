@@ -4,6 +4,7 @@
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 /* Title styling */
@@ -33,18 +34,20 @@
     text-decoration: none;
     font-size: 1.2rem;
     transition: transform 0.3s ease;
+    color: #171716;
 }
 
 /* Icon styling */
 .contact-links i {
     font-size: 2.5rem;
     margin-bottom: 5px;
+    color: #a38f8b;
 }
 
 /* Hover effect for links */
 .contact-links a:hover {
     transform: scale(1.1); /* Slightly enlarges link on hover */
-    color: #005fa3; /* Darker blue for hover */
+    color: #e3d4d1; 
 }
 
 /* Responsive adjustments */
