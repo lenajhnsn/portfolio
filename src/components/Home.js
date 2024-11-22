@@ -2,13 +2,14 @@ import React from "react";
 import { motion } from 'framer-motion'; // Import framer-motion for animations
 import './Home.css';
 import HomeVideo from '../assets/Lena Portfolio Homepage Video.mp4'; // Import homepage video 
+import HomeVideo2 from '../assets/Portfolio Introduction.mp4';
 
 // Home component
 const Home = ()=> {
     return (
         <div className = "home-container">
              {/* Video background */}
-             <video className="background-video" src={HomeVideo} autoPlay muted />
+             <video className="background-video" src={HomeVideo2} autoPlay muted />
             
             {/* {/* Animated welcome message
             <motion.div 

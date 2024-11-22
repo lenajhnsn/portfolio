@@ -1,62 +1,42 @@
 import React from 'react';
 import './Projects.css'; // Import CSS for styling
-
-// Placeholder image and video sources for now
-const MemoArchiveImage = '/path/to/memo-archive-homepage.png';
-const VideoPlaceholder = 'https://www.example.com/video-placeholder';
+import MemoArchiveVideo from "../assets/memoarchivevid.mp4"; // Import a valid video file
 
 const Projects = () => {
     return (
         <div className="projects-container">
-            {/* Full-width section for project title and image */}
-            <div className="project-header">
-                <h2>MemoArchive</h2>
-                <img src={MemoArchiveImage} alt="MemoArchive Homepage" className="project-image" />
-            </div>
+            <h1 className='project-title'>My Project</h1>
+            {/* Four-column row for description, video, and tech stack */}
+            <div className="project-main-row">
+                {/* Description column */}
+                <div className="project-description">
+                    <h3>About Memo Archive</h3>
+                    <p>
+                        Memo Archive is a web app designed to help users organize and preserve their memories. 
+                        It provides a simple, intuitive interface to add, edit, and view memories, complete with photos and detailed descriptions. 
+                    </p>
+                </div>
 
-            {/* Two-column row for front-end and back-end tech stacks */}
-            <div className="tech-stack-row">
-                <div className="tech-column">
-                    <h3>Front-End</h3>
+                {/* Video column (spans two columns) */}
+                <div className="project-video">
+                    <video className="project-image" src={MemoArchiveVideo} autoPlay muted loop />
+                </div>
+
+                {/* Tech stack column */}
+                <div className="project-tech-stack">
+                    <h3>Tech Stack</h3>
                     <ul>
                         <li>Vue.js</li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
-                <div className="tech-column">
-                    <h3>Back-End</h3>
-                    <ul>
                         <li>Java</li>
                         <li>Spring Boot</li>
                         <li>SQL</li>
                         <li>PostgreSQL</li>
                         <li>APIs</li>
+                        <li>Responsive Design</li>
                     </ul>
-                </div>
-            </div>
-
-            {/* Final row for video walkthroughs */}
-            <div className="video-row">
-                <div className="video-column">
-                    <h3>Front-End Walkthrough</h3>
-                    <iframe 
-                        src={VideoPlaceholder} 
-                        title="Front-End Walkthrough"
-                        className="video-placeholder"
-                        allowFullScreen
-                    ></iframe>
-                </div>
-                <div className="video-column">
-                    <h3>Back-End Walkthrough</h3>
-                    <iframe 
-                        src={VideoPlaceholder} 
-                        title="Back-End Walkthrough"
-                        className="video-placeholder"
-                        allowFullScreen
-                    ></iframe>
                 </div>
             </div>
         </div>

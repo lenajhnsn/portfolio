@@ -5,19 +5,46 @@
     padding: 20px;
 }
 
-/* Project header styling */
-.project-header {
+/* Centered title styling */
+.project-title {
+    font-size: 3rem; /* Adjust as needed */
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Space between title and the row */
+    font-weight: bold;
+    color: #333;
+}
+/* Four-column layout for description, video, and tech stack */
+.project-main-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 20px;
+    align-items: stretch; /* Ensures all items stretch to the same height */
+    grid-auto-rows: 1fr; /* Ensures equal row heights */
 }
 
-/* Project title */
-.project-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
+/* Description column styling */
+.project-description {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex; /* Ensures content aligns correctly */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center content */
 }
 
-/* Full-width project image */
+/* Video column styling (spans two grid columns) */
+.project-video {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Optional background to match other columns */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Video styling */
 .project-image {
     width: 100%;
     height: auto;
@@ -25,71 +52,28 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Two-column tech stack row */
-.tech-stack-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
-    gap: 20px;
-}
-
-/* Styling for each tech column */
-.tech-column {
-    flex: 1;
+/* Tech stack column styling */
+.project-tech-stack {
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Column titles */
-.tech-column h3 {
-    font-size: 1.75rem;
-    margin-bottom: 15px;
-}
-
-/* List styling for tech stack items */
-.tech-column ul {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.1rem;
-}
-
-.tech-column li {
-    margin: 10px 0;
-}
-
-/* Two-column video row */
-.video-row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    gap: 20px;
-}
-
-/* Styling for each video column */
-.video-column {
-    flex: 1;
-    text-align: center;
-}
-
-/* Styling for video placeholders (iframe) */
-.video-placeholder {
-    width: 100%;
-    height: 300px;
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex; /* Ensures content aligns correctly */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Vertically center content */
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    .tech-stack-row, .video-row {
-        flex-direction: column;
+    .project-main-row {
+        grid-template-columns: 1fr;
     }
 
-    .tech-column, .video-column {
+    .project-video {
+        grid-column: auto;
+    }
+
+    .project-description, .project-video, .project-tech-stack {
         width: 100%;
     }
 }

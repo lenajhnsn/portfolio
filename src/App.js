@@ -14,9 +14,9 @@ const App = () => {
         <div>
             <NavBar />
             <section id = "home"><Home /></section>
-            <section id = "timeline"><Timeline /></section>
             <section id = "projects"><Projects /></section>
             <section id = "skills"><TechnicalSkills /></section>
+            <section id = "timeline"><Timeline /></section>
             <section id = "contact"><Contact /></section>
         </div>
     );

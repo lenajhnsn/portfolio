@@ -2,19 +2,21 @@ import React from "react";
 import "./TechnicalSkills.css"; // Import CSS for styling
 
 // Import SVGs as images for use in <img> elements
-import javascriptLogo from "../assets/javascript.svg";
-import html5Logo from "../assets/html5.svg";
-import cssLogo from "../assets/css3.svg";
-import vueLogo from "../assets/vuedotjs.svg";
-import javaLogo from "../assets/java-plain-wordmark.svg";
-import springbootLogo from "../assets/springboot.svg";
-import postgresqlLogo from "../assets/postgresql.svg";
-import intellijLogo from "../assets/intellijidea.svg";
-import gitLogo from "../assets/git.svg";
-import githubLogo from "../assets/github.svg";
-import gitlabLogo from "../assets/gitlab.svg";
-import postmanLogo from "../assets/postman.svg";
-import rLogo from "../assets/r.svg";
+import javascriptLogo from "../assets/jslogo.png";
+import html5Logo from "../assets/htmllogo.png";
+import cssLogo from "../assets/csslogo.png";
+import sqlLogo from "../assets/sqllogo.png"
+import vueLogo from "../assets/vuelogo.png";
+import javaLogo from "../assets/javalogo.png";
+import springbootLogo from "../assets/springlogo.png";
+import postgresqlLogo from "../assets/postgresqllogo.png";
+import intellijLogo from "../assets/intellijlogo.png";
+import gitLogo from "../assets/gitlogo.png";
+import githubLogo from "../assets/githublogo.png";
+import gitlabLogo from "../assets/gitlablogo.png";
+import postmanLogo from "../assets/postman.png";
+import rLogo from "../assets/rlogo.png";
+import spssLogo from "../assets/spsslogo.png";
 
 // Array of skills, organized by category
 const skillsData = [
@@ -32,6 +34,7 @@ const skillsData = [
     category: "Backend",
     skills: [
       { name: "Java", logo: javaLogo },
+      { name: "SQL", logo: sqlLogo },
       { name: "Spring Boot", logo: springbootLogo },
       { name: "PostgreSQL", logo: postgresqlLogo },
       // Additional skills can be added here
@@ -52,6 +55,7 @@ const skillsData = [
     category: "Other",
     skills: [
       { name: "R", logo: rLogo },
+      { name: "SPSS", logo: spssLogo },
       // Additional skills can be added here
     ],
   },
