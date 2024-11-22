@@ -754,7 +754,7 @@ eval("module.exports = __webpack_require__.p + \"assets/vuelogo.f1a0c00e8cf57263
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/dist/";
+/******/ 		__webpack_require__.p = "/portfolio/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
