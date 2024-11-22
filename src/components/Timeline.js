@@ -6,28 +6,28 @@ import './Timeline.css';  // Import the CSS file with the timeline styles
 const timelineData = [
     {
         title: 'Foundations in Psychology',
-        description: 'My background in psychology helped me understand the user. I learned what motivates behavior, drives adoption, and shapes experiences. This foundation makes me attuned to user needs and helps me design software that connects with people.',
+        description: "My Bachelor's degree in Psychology helps me understand the user: what motivates behavior, drives adoption, and shapes experiences. This helps me design software that connects with people.",
     },
     {
-        title: 'Mastering Experimental Design',
-        description: 'Earning a master’s degree in experimental psychology honed my skills in analytical thinking, problem-solving, and the scientific method. With rigorous training in experimental design, statistics, and critical analysis, I developed a methodical and detailed approach to solving complex problems.',
-      },
-      {
-        title: 'Entering the World of Information Systems',
-        description: 'A master’s in information systems opened the door to technical skills in programming, database design, networking, and system management. My role as a product owner for my capstone project added practical experience in project management and user-focused design.',
-      },
-      {
-        title: 'Building Insights in EdTech',
+        title: 'Experimental Design',
+        description: "Earning a Master’s degree in Experimental Psychology sharpened my analytical thinking and problem-solving skills. Through rigorous training in experimental design, statistics, and critical analysis, I developed a methodical approach to tackling complex challenges."
+    },
+    {
+        title: 'Information Systems',
+        description: 'Completing another Master’s degree in Information Systems introduced me to programming, database design, networking, and system management. My role as a product owner for my capstone project added practical experience in project management and user-focused design.',
+    },
+    {
+        title: 'Experience in EdTech',
         description: 'My experience in ed tech immersed me in the world of software engineering, helping me support and guide aspiring developers. This role taught me what it takes to succeed in the field, from essential skills to mindsets, and gave me years of experience talking tech.',
-      },
-      {
-        title: 'Full Stack Development at Tech Elevator',
+    },
+    {
+        title: 'Full Stack Development',
         description: 'At Tech Elevator, I learned Java, JavaScript, and full-stack development, bridging my theoretical knowledge with practical coding experience. I created full-stack applications, strengthened my understanding of the development lifecycle, and built a strong technical foundation.',
-      },
-      {
+    },
+    {
         title: 'Creating the Memo Archive',
-        description: 'My latest full-stack application, the Memo Archive, brings everything together. This full-stack application showcases my coding skills, problem-solving, and design abilities.',
-      }
+        description: 'My latest full-stack application, Memo Archive, brings everything together. This full-stack application showcases my coding skills, problem-solving, and design abilities.',
+    }
 ];
 
 // Timeline component
@@ -40,9 +40,7 @@ const Timeline = () => {
       itemsRef.current.forEach((item) => {
         if (isElementInViewport(item)) {
           item.classList.add("in-view");
-        } else {
-          item.classList.remove("in-view");
-        }
+        } 
       });
     };
 
@@ -70,6 +68,14 @@ const Timeline = () => {
 
   return (
     <section className="timeline">
+      {/* Add an H2 header and paragraph */}
+      <header className="timeline-header">
+        <h2>My Professional Journey</h2>
+        <p>
+        This timeline highlights the key milestones in my career and education, showcasing my growth and journey into software engineering.
+        </p>
+      </header>
+
       <ul>
         {timelineData.map((item, index) => (
           <li key={index} ref={(el) => itemsRef.current[index] = el}>

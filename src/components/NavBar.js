@@ -1,9 +1,7 @@
 import React from 'react';
 import './NavBar.css';
-import logoImage from '../assets/logo1.png';
-import logo1 from '../assets/header1.png';
-import logo2 from '../assets/header2.png';
-import logo3 from '../assets/header3.png';
+import logo from '../assets/header4.png';
+
 
 
 const NavBar = () => {
@@ -12,7 +10,7 @@ const NavBar = () => {
 
             {/* Portfolio title on the left side */}
             <a href="/" className="navbar-title">
-                <img src={logo3} alt="Logo" className="logo" />
+                <img src={logo} alt="Logo" className="logo" />
             </a> 
             
             {/* Navigation links */}
