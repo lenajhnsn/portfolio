@@ -1,0 +1,36 @@
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth; 
+}
+
+/* Apply Montserrat globally */
+body {
+    font-family: 'Montserrat', sans-serif; /* Fallback to sans-serif */
+    color: #171716;
+    background-color: #f9f9f9
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styling for all h3 elements */
+h3 {
+    font-weight: 700; /* Adjust based on preference */
+    font-size: 1.75rem; /* Adjust default size */
+    margin-bottom: 15px;
+}
+
+/* Centered title styling */
+h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style:;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Space between title and the row */
+    margin-top: 20px;
+}
