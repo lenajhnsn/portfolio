@@ -1,12 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development', 
+  mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'), // Use "build" to match GitHub Pages deploy folder
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/portfolio/', // Must match your GitHub Pages repository name
+    publicPath: '/portfolio/', //GitHub Pages repository
   },
   devServer: {
     static: {
@@ -21,11 +21,11 @@ module.exports = {
         test: /\.svg$/,
         oneOf: [
           {
-            issuer: /\.[jt]sx?$/, // Apply @svgr/webpack when imported in a JS/TS file
+            issuer: /\.[jt]sx?$/,
             use: ['@svgr/webpack'],
           },
           {
-            type: 'asset', // Uses file-loader for SVGs that are direct image URLs
+            type: 'asset',
             loader: 'file-loader',
             options: {
               name: 'assets/[name].[hash].[ext]',
@@ -34,7 +34,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/, // Add this rule for images
+        test: /\.(png|jpg|jpeg|gif)$/,
         type: 'asset/resource',
         generator: {
           filename: 'assets/[name].[hash][ext]',
