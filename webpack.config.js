@@ -4,9 +4,9 @@ module.exports = {
   mode: 'development', 
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'), // Use "build" to match GitHub Pages deploy folder
     filename: 'bundle.js',
-    publicPath: '/dist/',
+    publicPath: '/portfolio/', // Must match your GitHub Pages repository name
   },
   devServer: {
     static: {
@@ -34,10 +34,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/,  // Add this rule for images
+        test: /\.(png|jpg|jpeg|gif)$/, // Add this rule for images
         type: 'asset/resource',
         generator: {
-            filename: 'assets/[name].[hash][ext]',
+          filename: 'assets/[name].[hash][ext]',
         },
       },
       {
@@ -55,4 +55,4 @@ module.exports = {
       },
     ],
   },
-};  
+};
