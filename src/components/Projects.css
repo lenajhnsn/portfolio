@@ -22,7 +22,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex; /* Ensures content aligns correctly */
     flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Vertically center content */
+    justify-content: flex-start; /* Content at top */
 }
 
 /* Video column styling (spans two grid columns) */
@@ -52,7 +52,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex; /* Ensures content aligns correctly */
     flex-direction: column; /* Stack content vertically */
-    justify-content: center; /* Vertically center content */
+    justify-content: flex-start; /* Content at top */
 }
 
 /* Responsive adjustments */
