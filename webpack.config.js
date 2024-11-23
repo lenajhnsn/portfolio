@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/portfolio/', //GitHub Pages repository
+    publicPath: '/portfolio/dist/', //GitHub Pages repository
   },
   devServer: {
     static: {
